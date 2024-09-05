@@ -1,5 +1,4 @@
 from PIL import Image
-import os
 
 def enhance_image(file_path):
     # Open the image file
