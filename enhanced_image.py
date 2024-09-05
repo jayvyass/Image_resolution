@@ -13,7 +13,7 @@ def enhance_image(file_path):
     img = img.resize((new_width, new_height), Image.LANCZOS)
     
     # Define DPI
-    dpi = (400, 400)  
+    dpi = (300, 300)  
     
     # Save the image with the specified DPI
     filename = 'enhanced_image.png'
