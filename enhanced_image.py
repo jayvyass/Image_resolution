@@ -106,3 +106,27 @@ def run(server_class=HTTPServer, handler_class=RequestHandler, port=8000):
 
 if __name__ == "__main__":
     run()
+  # def do_GET(self):      
+    #     if self.path.startswith('/static/'):
+    #         file_path = os.path.join(STATIC_DIR, self.path[len('/static/'):])
+    #         if os.path.isfile(file_path):
+    #             mime_type, _ = mimetypes.guess_type(file_path)
+    #             mime_type = mime_type or 'application/octet-stream'
+    #             with open(file_path, 'rb') as file:
+    #                 self.send_response(200)
+    #                 self.send_header('Content-type', mime_type)
+    #                 self.end_headers()
+    #                 self.wfile.write(file.read())
+    #             return
+    #         else:
+    #             self.send_response(404)
+    #             self.send_header('Content-type', 'application/json')
+    #             self.end_headers()
+    #             response = json.dumps({'error': 'File not found'})
+    #             self.wfile.write(response.encode('utf-8'))
+    #             return
+    #     self.send_response(404)
+    #     self.send_header('Content-type', 'application/json')
+    #     self.end_headers()
+    #     response = json.dumps({'error': 'Endpoint not found'})
+    #     self.wfile.write(response.encode('utf-8'))
